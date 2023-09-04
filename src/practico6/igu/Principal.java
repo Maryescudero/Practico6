@@ -30,69 +30,77 @@ public class Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jbAcceso = new javax.swing.JButton();
-        jbSalir = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jtfUsuario = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jlCarrito = new javax.swing.JLabel();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        jpfContraseña = new javax.swing.JPasswordField();
+        jbIngresar = new javax.swing.JButton();
+        jbSalir = new javax.swing.JButton();
+        jlFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jbAcceso.setText("INGRESAR");
-        jbAcceso.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jbAcceso.addActionListener(new java.awt.event.ActionListener() {
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/practico6/imagenes/vector.jpg"))); // NOI18N
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 600, 480));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/practico6/imagenes/usuario.png"))); // NOI18N
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 200, 30, 30));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/practico6/imagenes/password.png"))); // NOI18N
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 240, 30, 50));
+
+        jtfUsuario.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+        jPanel2.add(jtfUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 188, 180, 40));
+
+        jpfContraseña.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+        jPanel2.add(jpfContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 250, 180, 40));
+
+        jbIngresar.setText("INGRESAR");
+        jbIngresar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jbIngresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jbAccesoActionPerformed(evt);
+                jbIngresarActionPerformed(evt);
             }
         });
-        getContentPane().add(jbAcceso, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 310, 160, 50));
+        jPanel2.add(jbIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 370, 120, 40));
 
         jbSalir.setText("SALIR");
-        jbSalir.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jbSalir.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jbSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jbSalirActionPerformed(evt);
             }
         });
-        getContentPane().add(jbSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 380, 160, 50));
+        jPanel2.add(jbSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 370, 120, 40));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/practico6/imagenes/password.png"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 240, 30, 40));
+        jlFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/practico6/imagenes/60611-colores-pastel.jpg"))); // NOI18N
+        jPanel2.add(jlFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 930, 530));
 
-        jtfUsuario.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("sansserif", 1, 12), new java.awt.Color(219, 179, 179))); // NOI18N
-        getContentPane().add(jtfUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 180, 220, 50));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/practico6/imagenes/usuario.png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 180, 30, 50));
-
-        jlCarrito.setIcon(new javax.swing.ImageIcon(getClass().getResource("/practico6/imagenes/vector.jpg"))); // NOI18N
-        getContentPane().add(jlCarrito, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 590, 470));
-
-        jPasswordField1.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
-        getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 240, 220, 50));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 930, 530));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jbAccesoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbAccesoActionPerformed
-        Menu acceso = new Menu();
-        if (jtfUsuario.getText().equals("usuario") && jPasswordField1.getText().equals("1234")) {
-            acceso.setVisible(true);
-            
+    private void jbIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbIngresarActionPerformed
+        if (jtfUsuario.getText().equals("usuario") && jpfContraseña.getText().equals("1234")) {
+         Menu menu = new Menu();
+         menu.setVisible(true);
         } else {
             
             JOptionPane.showMessageDialog(this, "Usuario o contraseña incorrectos");
             jtfUsuario.setText("");
-            jPasswordField1.setText("");
+            jpfContraseña.setText("");
         }
-    }//GEN-LAST:event_jbAccesoActionPerformed
+    }//GEN-LAST:event_jbIngresarActionPerformed
 
     private void jbSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbSalirActionPerformed
-        System.exit(WIDTH);
-        
+        JOptionPane.showMessageDialog(this," SU CARGA HA SIDO EXITOSA");
+        System.exit(WIDTH);// salgo del sistema, imprimo cartel
     }//GEN-LAST:event_jbSalirActionPerformed
 
      
@@ -132,12 +140,14 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JButton jbAcceso;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JButton jbIngresar;
     private javax.swing.JButton jbSalir;
-    private javax.swing.JLabel jlCarrito;
+    private javax.swing.JLabel jlFondo;
+    private javax.swing.JPasswordField jpfContraseña;
     private javax.swing.JTextField jtfUsuario;
     // End of variables declaration//GEN-END:variables
 

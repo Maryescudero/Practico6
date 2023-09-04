@@ -139,6 +139,8 @@ DefaultTableModel modelo = new DefaultTableModel();
             .addComponent(jpRubro, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        jpRubro.getAccessibleContext().setAccessibleParent(null);
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 

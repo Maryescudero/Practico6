@@ -70,6 +70,8 @@ public class Menu extends javax.swing.JFrame {
             .addComponent(escritorio)
         );
 
+        escritorio.getAccessibleContext().setAccessibleParent(null);
+
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1050, 540));
 
         jmAdministracion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/practico6/imagenes/categorias.png"))); // NOI18N
@@ -181,9 +183,10 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jmiPrecioActionPerformed
 
     private void jRadioButtonMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMenuItem5ActionPerformed
+        JOptionPane.showMessageDialog(this, "SU CARGA HA SIDO EXITOSA");
         Principal salida = new Principal();
         salida.setVisible(true);
-        JOptionPane.showMessageDialog(this, "SU CARGA HA SIDO EXITOSA");
+        
     }//GEN-LAST:event_jRadioButtonMenuItem5ActionPerformed
 
     /**

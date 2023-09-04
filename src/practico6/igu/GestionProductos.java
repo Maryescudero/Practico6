@@ -193,6 +193,8 @@ private Productos prodEncontrado=null;
             .addComponent(jpGestionProductos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        jpGestionProductos.getAccessibleContext().setAccessibleParent(null);
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 

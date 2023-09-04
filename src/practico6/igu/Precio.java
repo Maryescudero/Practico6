@@ -164,6 +164,8 @@ public class Precio extends javax.swing.JInternalFrame {
             .addComponent(jpPrecio, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        jpPrecio.getAccessibleContext().setAccessibleParent(null);
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -206,7 +208,7 @@ public class Precio extends javax.swing.JInternalFrame {
         // metodo para hacar clik en una fila y me apareza una ventana emergente con el dato del mismo
          int filaSeleccionada=jtInventario.getSelectedRow();
         double precio=(Integer)jtInventario.getValueAt(filaSeleccionada, 0);
-        JOptionPane.showMessageDialog(this,"El precio del producto seleccionado es $ : " + precio);
+        JOptionPane.showMessageDialog(this,"El precio del producto seleccionado es $ : " + prodEncontrado.getPrecio());
     }//GEN-LAST:event_jtInventarioMouseClicked
 
 
